@@ -23,6 +23,8 @@ The arduino 10-bit analog to digital converter.
 
 **a. What voltage values do you see from your force sensor?**
 
+The voltage values range from 0 to 1023
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
