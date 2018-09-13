@@ -6,6 +6,8 @@
 ## Part A.  Writing to the Serial Monitor
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
+
+The range is from 0 to 1023
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
 
