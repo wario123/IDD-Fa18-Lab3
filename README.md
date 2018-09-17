@@ -221,6 +221,8 @@ void setColor(float red, float  green, float blue)
 
 ![alt tag](https://github.com/wario123/IDD-Fa18-Lab3/blob/master/Screen%20Shot%202018-09-17%20at%205.49.09%20PM.png)
 
+From the graph above, as we linearly approach our finger to the proximity sensor the voltage values exponentially increase. 60,000 corresponds to touching the proximity sensor, 30,000 corresponds to around 4 mm, 10,000 corresponds to around 1.5 cm while 3,000 corresponds to aroun 5 cm.
+
 **b. Upload your merged code to your lab report repository and link to it here.**
 
 ## Optional. Graphic Display
