@@ -219,6 +219,8 @@ void setColor(float red, float  green, float blue)
 
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
 
+![alt tag](https://github.com/wario123/IDD-Fa18-Lab3/blob/master/Screen%20Shot%202018-09-17%20at%205.49.09%20PM.png)
+
 **b. Upload your merged code to your lab report repository and link to it here.**
 
 ## Optional. Graphic Display
