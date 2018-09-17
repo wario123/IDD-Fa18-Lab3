@@ -23,11 +23,67 @@ The arduino 10-bit analog to digital converter.
 
 **a. What voltage values do you see from your force sensor?**
 
-The voltage values range from 0 to 1023
+The voltage values range from 0 to 5V. When seen on the Serial Monitor, the values from 0 to 5 are mapped to 10 bit numbers (0 to 1023)
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
+It seems that as the voltage has a logarithmic relationship with the force applied because by applying only a little pressure the values on the serial monitor jump immediately to 700-800 and applying a large amount of force increases the voltage values by a small amount.
+
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
+```
+int redPin = 8;
+int greenPin = 10;
+int bluePin = 9;         // the PWM pin the LED is attached to
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 5;    // how many points to fade the LED by
+int fsrAnalogPin = A5;
+int force;
+int x;
+int y;
+int z;
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // set the brightness of pin 9:
+  force = analogRead(fsrAnalogPin);
+  x = (force-70) % 255;
+  y = (force-120) % 255;
+  z = force % 255;
+  
+  setColor(x, y, z);
+
+//  // change the brightness for next time through the loop:
+//  brightness = brightness + fadeAmount;
+//
+//  // reverse the direction of the fading at the ends of the fade:
+//  if (brightness <= 0 || brightness >= 255) {
+//    fadeAmount = -fadeAmount;
+//  }
+  // wait for 30 milliseconds to see the dimming effect
+  delay(30);
+}
+
+void setColor(int red, int green, int blue)
+{
+  #ifdef COMMON_ANODE
+    red = 255 - red;
+    green = 255 - green;
+    blue = 255 - blue;
+  #endif
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);  
+}
+
+```
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
