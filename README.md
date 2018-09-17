@@ -30,6 +30,9 @@ The voltage values range from 0 to 5V. When seen on the Serial Monitor, the valu
 It seems that as the voltage has a logarithmic relationship with the force applied because by applying only a little pressure the values on the serial monitor jump immediately to 700-800 and applying a large amount of force increases the voltage values by a small amount.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
+
+We can combine the rgb LED code with the fade code and connect the fsr to input into the color setting function.
+
 ```
 int redPin = 8;
 int greenPin = 10;
