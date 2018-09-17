@@ -225,6 +225,8 @@ From the graph above, as we linearly approach our finger to the proximity sensor
 
 **b. Upload your merged code to your lab report repository and link to it here.**
 
+[Link to Code!](https://github.com/wario123/IDD-Fa18-Lab3/blob/master/accel_and_prox.ino)
+
 ## Optional. Graphic Display
 
 **Take a picture of your screen working insert it here!**
