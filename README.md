@@ -237,6 +237,8 @@ From the graph above, as we linearly approach our finger to the proximity sensor
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+It does because if the writing state is when the potentiometer is set to 1 and  the clearing state is when potentiometer is in the middle (set to 2) then you will always clear what your write if you want to try to read a value and thus will never be able to read a value that is in memeory.
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
