@@ -257,6 +257,23 @@ We could store the rest of the data that does not fit into the next memory locat
 
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
+```
+int fsrAnalogPin = A5;
+int force;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  force = analogRead(fsrAnalogPin);
+  Serial.println(force);
+}
+```
+
 ### 2. Design your logger
  
 **a. Insert here a copy of your final state diagram.**
