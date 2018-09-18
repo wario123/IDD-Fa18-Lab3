@@ -278,6 +278,8 @@ void loop() {
  
 **a. Insert here a copy of your final state diagram.**
 
+![alt tag](https://github.com/wario123/IDD-Fa18-Lab3/blob/master/IMG_7376.jpg)
+
 ### 3. Create your data logger!
  
 **a. Record and upload a short demo video of your logger in action.**
