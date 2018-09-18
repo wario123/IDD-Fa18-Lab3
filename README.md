@@ -241,6 +241,8 @@ It does because if the writing state is when the potentiometer is set to 1 and  
 
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
+It is all in the setup() functions because we do not want to perform the state actions indefinitely. We only want to write once or read once to memory.
+
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
